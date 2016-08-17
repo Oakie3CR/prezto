@@ -72,3 +72,9 @@ unsetopt auto_name_dirs
 export PATH="$PATH:$HOME/.rvm/bin"
 
 export HOMEBREW_GITHUB_API_TOKEN=67e32320133b89d7bb08dcf31705ad5d781f08d3
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Enable iterm3 shell integration
+source ~/.iterm2_shell_integration.`basename $SHELL`
