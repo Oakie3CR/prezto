@@ -43,10 +43,6 @@ export GO15VENDOREXPERIMENT=1
 # Export for alianza scripts
 export ALIANZA_HOME="$HOME/sandbox/alianza"
 
-if ! echo ${PATH} | grep -q ~/bin ; then
-    PATH=~/bin:${PATH}
-fi
-
 alias gru="git remote update -p"
 alias hideme='history -d $((HISTCMD-1))'
 alias hideprev='history -d $((HISTCMD-2)) && history -d $((HISTCMD-1))'
