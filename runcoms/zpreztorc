@@ -29,17 +29,17 @@ zstyle ':prezto:*:*' color 'yes'
 zstyle ':prezto:load' pmodule \
   'git' \
   'gnu-utility' \
-  'homebrew' \
+  'completion' \
   'environment' \
   'terminal' \
   'editor' \
   'history' \
+  'homebrew' \
   'directory' \
   'spectrum' \
   'utility' \
   'syntax-highlighting' \
   'history-substring-search' \
-  'completion' \
   'prompt'
 
 #
