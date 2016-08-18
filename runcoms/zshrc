@@ -33,12 +33,12 @@ cdpath=(. ~/sandbox/alianza/ax ~/sandbox/alianza/common ~/sandbox/alianza/core/ 
 ~/sandbox/alianza/microservices/ ~/sandbox/alianza/docker ~/sandbox/alianza/call_routing ~/sandbox/alianza/github/
 ~/sandbox/alianza/voicemail/ ~/sandbox/alianza/ ~/sandbox/ ~)
 export EDITOR=/usr/local/bin/vim
-export FORGE_HOME=~/devtools/forge-distribution-1.0.4.Final
+#export FORGE_HOME=~/devtools/forge-distribution-1.0.4.Final
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # Paths for Go
 export GOPATH=$HOME/gopath
-export GO15VENDOREXPERIMENT=1
+#export GO15VENDOREXPERIMENT=1
 
 # Export for alianza scripts
 export ALIANZA_HOME="$HOME/sandbox/alianza"
@@ -58,7 +58,7 @@ alias ports='sudo lsof -iTCP -sTCP:LISTEN -n -P'
 # this is for the cool dotfiles management
 alias cfg='GIT_DIR=$HOME/.cfg GIT_WORK_TREE=$HOME git'
 
-eval "$(hub alias -s)"
+#eval "$(hub alias -s)"
 GITHUB_USER=Oakie3CR
 
 # I like applications in /Applications
