@@ -50,6 +50,12 @@ cdpath=(
 
 export EDITOR=/usr/local/bin/vim
 export ANDROID_HOME=/usr/local/opt/android-sdk
+export AUTOMATION_HOME=$HOME/sandbox/alianza/common/vagrant-automation
+path=(
+  $path
+  $AUTOMATION_HOME
+  $HOME/.rvm/bin
+)
 
 # Paths for Go
 export GOPATH=$HOME/gopath
@@ -73,14 +79,13 @@ alias ports='sudo lsof -iTCP -sTCP:LISTEN -n -P'
 # this is for the cool dotfiles management
 alias cfg='GIT_DIR=$HOME/.cfg GIT_WORK_TREE=$HOME git'
 
-#eval "$(hub alias -s)"
+eval "$(hub alias -s)"
 GITHUB_USER=Oakie3CR
 
 # I like applications in /Applications
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 unsetopt auto_name_dirs
-export PATH="$PATH:$HOME/.rvm/bin"
 
 source ~/.brew-token
 
