@@ -15,7 +15,7 @@ fi
 bindkey '^R' history-incremental-search-backward
 bindkey '^?' backward-delete-char
 
-MANPATH="/usr/loca/opt/coreutils/libexec/gnuman:$MANPATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 export FIGNORE=CVS:\~:.o:.svn
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
