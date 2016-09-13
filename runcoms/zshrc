@@ -29,13 +29,26 @@ export SCALA_HOME=/usr/local/opt/scala/libexec
 export MAVEN_OPTS="-Xmx1g"
 export LESS="FRXei"
 export PDSH_RCMD_TYPE=ssh
+
 # Uncomment the next part when I work with nvm
 #export NVM_DIR="$HOME/.nvm"
 #. "$(brew --prefix nvm)/nvm.sh"
 
-cdpath=(. ~/sandbox/alianza/ax ~/sandbox/alianza/common ~/sandbox/alianza/core/ ~/sandbox/alianza/environments/
-~/sandbox/alianza/microservices/ ~/sandbox/alianza/docker ~/sandbox/alianza/call_routing ~/sandbox/alianza/github/
-~/sandbox/alianza/voicemail/ ~/sandbox/alianza/ ~/sandbox/ ~)
+cdpath=(
+  ~/sandbox/alianza/ax
+  ~/sandbox/alianza/common
+  ~/sandbox/alianza/core/
+  ~/sandbox/alianza/environments/
+  ~/sandbox/alianza/microservices/
+  ~/sandbox/alianza/docker
+  ~/sandbox/alianza/call_routing
+  ~/sandbox/alianza/github/
+  ~/sandbox/alianza/voicemail/
+  ~/sandbox/alianza/
+  ~/sandbox/
+  ~
+)
+
 export EDITOR=/usr/local/bin/vim
 #export FORGE_HOME=~/devtools/forge-distribution-1.0.4.Final
 export ANDROID_HOME=/usr/local/opt/android-sdk
