@@ -25,7 +25,6 @@ export PYTHON_HOME=/usr/local/share/python
 export M2_HOME=/usr/local/opt/maven/libexec
 export M2=$M2_HOME/bin
 export SCALA_HOME=/usr/local/opt/scala/libexec
-#export JBOSS_HOME=/opt/jboss
 export MAVEN_OPTS="-Xmx1g"
 export LESS="FRXei"
 export PDSH_RCMD_TYPE=ssh
@@ -50,7 +49,6 @@ cdpath=(
 )
 
 export EDITOR=/usr/local/bin/vim
-#export FORGE_HOME=~/devtools/forge-distribution-1.0.4.Final
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # Paths for Go
