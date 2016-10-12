@@ -75,6 +75,7 @@ alias mcp="mvn clean package"
 alias mp="mvn package"
 alias mvni="mvn install -Dmaven.test.skip"
 alias ports='sudo lsof -iTCP -sTCP:LISTEN -n -P'
+alias rm='nocorrect rm'
 #
 # this is for the cool dotfiles management
 alias cfg='GIT_DIR=$HOME/.cfg GIT_WORK_TREE=$HOME git'
