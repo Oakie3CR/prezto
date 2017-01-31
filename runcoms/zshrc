@@ -36,15 +36,18 @@ export PDSH_RCMD_TYPE=ssh
 cdpath=(
   ~/sandbox/alianza/ax
   ~/sandbox/alianza/common
-  ~/sandbox/alianza/core/
-  ~/sandbox/alianza/environments/
-  ~/sandbox/alianza/microservices/
+  ~/sandbox/alianza/core
+  ~/sandbox/alianza/environments
+  ~/sandbox/alianza/microservices
+  ~/sandbox/alianza/voicemail
   ~/sandbox/alianza/docker
   ~/sandbox/alianza/call_routing
-  ~/sandbox/alianza/github/
-  ~/sandbox/alianza/voicemail/
-  ~/sandbox/alianza/
-  ~/sandbox/
+  ~/sandbox/alianza/CallRating
+  ~/sandbox/alianza/github
+  ~/sandbox/alianza/ansible
+  ~/sandbox/alianza/device
+  ~/sandbox/alianza
+  ~/sandbox
   ~
 )
 
@@ -55,6 +58,7 @@ path=(
   $path
   $AUTOMATION_HOME
   $HOME/.rvm/bin
+  $HOME/devtools/cassandra/bin
 )
 
 # Paths for Go
@@ -85,6 +89,8 @@ GITHUB_USER=Oakie3CR
 
 # I like applications in /Applications
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+eval "$(pyenv virtualenv-init -)"
 
 unsetopt auto_name_dirs
 
