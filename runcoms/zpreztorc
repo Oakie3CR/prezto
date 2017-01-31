@@ -37,6 +37,7 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'directory' \
   'spectrum' \
+  'python' \
   'utility' \
   'syntax-highlighting' \
   'history-substring-search' \
