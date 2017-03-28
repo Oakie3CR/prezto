@@ -10,6 +10,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# source my local completions
+fpath=("${ZDOTDIR:-$HOME}/completions" $fpath)
+compinit
+
 # Customize to your needs...
 # Add reverse history search
 bindkey '^R' history-incremental-search-backward
@@ -93,6 +97,8 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 eval "$(pyenv virtualenv-init -)"
 
 unsetopt auto_name_dirs
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
 source ~/.brew-token
 
