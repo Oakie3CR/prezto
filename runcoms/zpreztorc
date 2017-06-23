@@ -28,7 +28,6 @@ zstyle ':prezto:*:*' color 'yes'
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'git' \
-  'gnu-utility' \
   'completion' \
   'environment' \
   'terminal' \
@@ -37,6 +36,7 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'directory' \
   'spectrum' \
+  'gnu-utility' \
   'utility' \
   'syntax-highlighting' \
   'history-substring-search' \

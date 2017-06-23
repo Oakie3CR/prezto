@@ -26,7 +26,7 @@ export M2_HOME=/usr/local/opt/maven/libexec
 export M2=$M2_HOME/bin
 #export SCALA_HOME=/usr/local/opt/scala/libexec
 export MAVEN_OPTS="-Xmx1g"
-export LESS="FRXei"
+export LESS="FRrXei"
 export PDSH_RCMD_TYPE=ssh
 
 # Uncomment the next part when I work with nvm
