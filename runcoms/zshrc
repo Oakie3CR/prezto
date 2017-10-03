@@ -34,9 +34,8 @@ export PDSH_RCMD_TYPE=ssh
 #. "$(brew --prefix nvm)/nvm.sh"
 
 cdpath=(
-  ~/sandbox/userstore/
-  ~/sandbox/identity/
-  ~/sandbox
+  ~/sandbox/octanner/
+  ~/sandbox/
   ~/my_data/
   ~
 )
@@ -82,22 +81,8 @@ eject () {
 # I like applications in /Applications
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-#eval "$(pyenv virtualenv-init -)"
-
 # This OC Tanner specific environment variables
-OCT_USER=christian.rigdon
-OCT_PASS=AKCp2WXCNFMht5btsQKphdDEHde4cakCs73gYFK3kSXkys5rur8xENpwbevtNfXG2xf2ch2pR
-export OCT_ARTIFACTORY_USER=$OCT_USER
-export OCT_ARTIFACTORY_PASS=$OCT_PASS
-export OCT_VAULT_SHARED_READ_ARTIFACTORY_USERNAME=$OCT_USER
-export OCT_VAULT_SHARED_READ_ARTIFACTORY_PASSWORD=$OCT_PASS
-export TOKEN_URL=https://vision-dev.appreciatehub.com/api/login/token
-export AVATAR_ORIGINAL_URI=https://s3.amazonaws.com/oc-images-api/test/users/avatars/default/original.png
-export AVATAR_PROFILE_URI=https://s3.amazonaws.com/oc-images-api/test/users/avatars/default/profile.png
-export AVATAR_THUMB_URI=https://s3.amazonaws.com/oc-images-api/test/users/avatars/default/thumb.png
-export VISION_URL=https://vision-qa.appreciatehub.com
-export EVENTS_SERVER_URL=https://eventsapi-pfm-qa.alamoappi.octanner.io
-export MEMCACHED_URL=oct-68ddf2a5.fuetsj.0001.usw2.cache.amazonaws.com:6379
+export VAULT_ADDR=https://vault.octanner.net
 
 unsetopt auto_name_dirs
 

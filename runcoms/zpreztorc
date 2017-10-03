@@ -26,10 +26,15 @@ zstyle ':prezto:*:*' color 'yes'
 
 # Set the Prezto modules to load (browse modules).
 # The order matters.
+# environment must be first
+# gnu-utility must be before utility
+# completion must be after utility
+# zsh-syntax-hightlighting must be third-to-last
+# history-substring-search must be second-to-last
+# prompt must be last
 zstyle ':prezto:load' pmodule \
-  'git' \
-  'completion' \
   'environment' \
+  'git' \
   'terminal' \
   'editor' \
   'history' \
@@ -38,6 +43,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'gnu-utility' \
   'utility' \
+  'completion' \
   'syntax-highlighting' \
   'history-substring-search' \
   'prompt'
