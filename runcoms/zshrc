@@ -47,7 +47,7 @@ path=(
   #$HOME/.rvm/bin
   #$HOME/devtools/cassandra/bin
   $HOME/.appreciatekit/bin
-  $HOME/.scalaenv/bin
+  #$HOME/.scalaenv/bin
 )
 
 # Paths for Go
@@ -88,6 +88,6 @@ unsetopt auto_name_dirs
 
 source ~/.brew-token
 
-eval "$(scalaenv init -)"
+#eval "$(scalaenv init -)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
