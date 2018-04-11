@@ -89,6 +89,8 @@ unsetopt auto_name_dirs
 
 source ~/.brew-token
 
+fpath=($HOME/.zsh/completion $fpath)
+
 #eval "$(scalaenv init -)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
