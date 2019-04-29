@@ -89,7 +89,10 @@ unsetopt auto_name_dirs
 
 source ~/.brew-token
 
-fpath=($HOME/.zsh/completion $fpath)
+fpath=(
+  $HOME/.zsh/completion
+  $fpath
+)
 
 ####-begin-ak-completions-###
 _aka_yargs_completions()
