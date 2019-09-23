@@ -17,6 +17,12 @@ bindkey '^?' backward-delete-char
 
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
+path=(
+  $path
+  $HOME/.appreciatekit/bin
+  $HOME/.cargo/bin
+)
+
 export FIGNORE=CVS:\~:.o:.svn
 export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
@@ -41,14 +47,6 @@ cdpath=(
 )
 
 export EDITOR=/usr/local/bin/nvim
-export ANDROID_HOME=/usr/local/opt/android-sdk
-path=(
-  $path
-  #$HOME/.rvm/bin
-  #$HOME/devtools/cassandra/bin
-  $HOME/.appreciatekit/bin
-  #$HOME/.scalaenv/bin
-)
 
 # Paths for Go
 export GOPATH=$HOME/gopath
